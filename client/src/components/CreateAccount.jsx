@@ -10,7 +10,7 @@ export const CreateAccount=()=>{
 
     const user= useSelector((data)=>data)
     const navigate=useNavigate()
-    console.log(user)
+    
     const dispatch= useDispatch()
  const [data,setData]= useState({})
  const handleChange=(e)=>{
@@ -20,7 +20,7 @@ export const CreateAccount=()=>{
 
 
  const handle=async()=>{
-    console.log(data)
+ 
     await postData('/user/createuser',data).then((e)=>{
 
          
