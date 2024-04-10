@@ -24,7 +24,7 @@ export const LogIn = () => {
   };
   
   const handle = async () => {
-    console.log(data);
+    
     await postData("/user/login", data)
       .then((e) => {
         dispatch(setUser(e));
